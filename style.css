@@ -313,16 +313,49 @@ input[type="radio"] {
 }
 
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
   .slider-background {
     width: 100%;
   }
 
-  .slide img {
-    max-height: 12.5rem; /* 200px = 12.5rem */
+  .slide {
+    position: relative;
   }
 
+  .slide img {
+    height: 80%; /* 200px */
+    width: 90%;
+    object-fit: contain;
+    border-radius: 0.625rem; /* Optional: Add rounded corners */
+  }
+
+  /* Position the navigation buttons in the middle of the image with indentation from the bottom */
+  .navigation {
+    position: absolute;
+    bottom: 7rem; /* Slight indentation from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.625rem;
+    padding: 0;
+  }
+
+  /* Adjust the size of navigation buttons for mobile */
+  .nav-control {
+    background-color: rgba(212, 193, 193, 0.555);
+    border-radius: 50%;
+  }
+
+  /* Caption position just below the control buttons and aligned to the left */
   .caption {
-    font-size: 0.875rem; /* 14px = 0.875rem */
+    position: absolute;
+    bottom: -2.25rem; /* Adjusted to be below the buttons */
+    left: 0;
+    font-size: 0.875rem; /* 14px */
+    color: white;
+    text-align: left;
+    width: 100%;
+    padding-left: 0.625rem; /* Adding some padding to align left */
   }
 }
+
