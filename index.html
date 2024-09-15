@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cssMemSlider</title>
+    <title>Horizontal Slider</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="slider-background">
+        <div class="slider-container">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+    
+            <div class="slides">
+                <div class="slide" id="s1">
+                    <img src="./images/a1d7434ca06fc11ed005acf238539309.jpg" alt="Image 1">
+                </div>
+                <div class="slide" id="s2">
+                    <img src="./images/Снимок экрана 2024-09-12 в 12.40.22.png" alt="Image 2">
+                </div>
+                <div class="slide" id="s3">
+                    <img src="./images/07ad229360a14007d1d24fa51e0fc638.jpg" alt="Image 3">
+                </div>
+                <div class="slide" id="s4">
+                    <img src="./images/4d3bfb4440915f1e2606c6713d8850d9.jpg" alt="Image 4">
+                </div>
+            </div>
+    
+            <div class="control-panel">
+                <div class="captions">
+                    <div class="caption" data-caption="slide1">Маленькие шаги каждый день</div>
+                    <div class="caption" data-caption="slide2">По одному шагу за раз</div>
+                    <div class="caption" data-caption="slide3">Продолжай двигаться</div>
+                    <div class="caption" data-caption="slide4">Не сдавайся</div>
+                </div>
+                <div class="navigation">
+                    <label for="slide1" class="nav-control"></label>
+                    <label for="slide2" class="nav-control"></label>
+                    <label for="slide3" class="nav-control"></label>
+                    <label for="slide4" class="nav-control"></label>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
